@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28531.58
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{85E1E958-E736-49D6-AAB9-AA2EA7558CA1}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eagle", "Eagle\Eagle.csproj", "{EE3D4C27-93AE-4486-BCFD-39711869FA18}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EE3D4C27-93AE-4486-BCFD-39711869FA18} = {EE3D4C27-93AE-4486-BCFD-39711869FA18}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE3D4C27-93AE-4486-BCFD-39711869FA18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE3D4C27-93AE-4486-BCFD-39711869FA18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE3D4C27-93AE-4486-BCFD-39711869FA18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE3D4C27-93AE-4486-BCFD-39711869FA18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C607EAFC-1656-41E1-9C52-8873880F06F9}
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AntFarmBeta.vsmdi
+	EndGlobalSection
+EndGlobal
