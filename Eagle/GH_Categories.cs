@@ -17,5 +17,7 @@ namespace Eagle
         Data = 1,
         Display = 2,
         Params = 3,
+        Physics = 4,
+        Symbols = 5,
     }
 }

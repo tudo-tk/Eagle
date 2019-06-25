@@ -1,25 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-
-using Rhino.Geometry;
-
-using Grasshopper.Kernel;
-
 using System.Drawing;
-using Grasshopper.Kernel.Data;
-using Grasshopper.Kernel.Types;
 using System.Threading.Tasks;
 using System.Collections.Concurrent;
+
+using Rhino.Geometry;
 using Rhino.Display;
-using Grasshopper.GUI.Canvas;
-using Grasshopper.GUI;
-using Rhino.DocObjects;
+
+using Grasshopper.Kernel;
+using Grasshopper.Kernel.Data;
+using Grasshopper.Kernel.Types;
+
 
 namespace Eagle.Components.Cluster
 {
     public class GH_CustomDisplay : GH_Component
     {
-        private Rhino.Display.CustomDisplay m_display = new Rhino.Display.CustomDisplay(true);
+        private CustomDisplay m_display = new CustomDisplay(true);
         /// <summary>
         /// Initializes a new instance of the AF_GH_DataSetNew class.
         /// </summary>
@@ -137,6 +134,7 @@ namespace Eagle.Components.Cluster
 
                             PointStyle pointStyle = (PointStyle)style;
                             m_display.AddPoints(points, colors[i], pointStyle, size);
+
                         }
                     }
                     else
@@ -155,11 +153,11 @@ namespace Eagle.Components.Cluster
         /// <summary>
         /// Provides an Icon for the component.
         /// </summary>
-        protected override System.Drawing.Bitmap Icon
+        protected override Bitmap Icon
         {
             get
             {
-                return Properties.Resources.FilesInFolder;
+                return Properties.Resources.CustomDisplay;
             }
         }
 

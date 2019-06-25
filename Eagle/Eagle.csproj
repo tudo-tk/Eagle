@@ -85,8 +85,10 @@
     <Compile Include="Components\Cluster\GH_DbScan.cs" />
     <Compile Include="Components\Cluster\GH_kMeans.cs" />
     <Compile Include="Components\Data\FileTypes.cs" />
-    <Compile Include="Components\Data\GH_FilesInFolder.cs" />
+    <Compile Include="Components\Data\GH_ReadXYZ.cs" />
     <Compile Include="Components\Display\GH_CustomDisplay.cs" />
+    <Compile Include="Components\Physics\GH_Elastica.cs" />
+    <Compile Include="Components\Symbols\GH_Support.cs" />
     <Compile Include="EagleInfo.cs" />
     <Compile Include="GH_Categories.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -120,6 +122,15 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Components\Params\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\XYZ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Elastica.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomDisplay.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

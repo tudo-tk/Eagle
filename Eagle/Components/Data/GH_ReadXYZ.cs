@@ -17,7 +17,7 @@ using Grasshopper.Kernel.Geometry.Delaunay;
 
 namespace Eagle.Components.Data
 {
-    public class GH_FilesInFolder : GH_Component
+    public class GH_ReadXYZ : GH_Component
     {
         bool recursive = false;
         bool asMesh = false;
@@ -26,8 +26,8 @@ namespace Eagle.Components.Data
         /// <summary>
         /// Initializes a new instance of the AF_GH_DataSetNew class.
         /// </summary>
-        public GH_FilesInFolder()
-          : base("FilesInFolder", "FiF", "Read files in folder", GH_Categories.Eagle.ToString(), GH_SubCategories.Data.ToString())
+        public GH_ReadXYZ()
+          : base("Read XYZ files", "XYZ", "Read XYZ files in folder", GH_Categories.Eagle.ToString(), GH_SubCategories.Data.ToString())
         {
         }
 
@@ -151,7 +151,7 @@ namespace Eagle.Components.Data
         {
             get
             {
-                return Properties.Resources.FilesInFolder;
+                return Properties.Resources.XYZ;
             }
         }
 
